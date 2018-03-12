@@ -7,22 +7,29 @@ var connection = require("./connection.js");
 // These help avoid SQL injection
 // https://en.wikipedia.org/wiki/SQL_injection
 var orm = {
-  selectAll: function(tableInput, colToSearch, valOfCol) {
+  selectAll: function(tableInput, cb) {
     var queryString = "SELECT * FROM ?? WHERE ?? = ?";
-    connection.query(queryString, [tableInput, colToSearch, valOfCol], function(err, result) {
+    connection.query(queryString, [tableInput, callback], function(err, result) {
       if (err) throw err;
       console.log(result);
     });
   },
-  create: function(whatToSelect, table, orderCol) {
-    var queryString = "SELECT ?? FROM ?? ORDER BY ?? DESC";
+  create: function(table, columns, value, cb) {
+    var queryString = "INSERT INTO " + table;
     console.log(queryString);
-    connection.query(queryString, [whatToSelect, table, orderCol], function(err, result) {
-      if (err) throw err;
+    connection.query(queryString, value, function(err, result) {
+      if (err) {
+      throw err;
+      }
+      cb(result);
       console.log(result);
     });
   },
-  update: function(tableOneCol, tableTwoForeignKey, tableOne, tableTwo) {
+
+
+// continue here post tutor session
+
+  update: function(table, columnsValues, condition, cb) {
     var queryString =
       "SELECT ??, COUNT(??) AS count FROM ?? LEFT JOIN ?? ON ??.??= ??.id GROUP BY ?? ORDER BY count DESC LIMIT 1";
 

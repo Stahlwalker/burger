@@ -1,21 +1,20 @@
-### Schema
-CREATE DATABASE pets_db;
-USE pets_db;
+-- DROP DATABASE IF EXISTS burgers_db;
+-- 
+-- CREATE DATABASE burgers_db;
+USE burgers_db;
 
-CREATE TABLE buyers
-(
-	id int NOT NULL AUTO_INCREMENT,
-	buyer_name varchar(255) NOT NULL,
-	PRIMARY KEY (id)
-);
+-- CREATE TABLE burgers
+-- (
+-- 	id int NOT NULL AUTO_INCREMENT,
+-- 	burger_name varchar(100) NOT NULL,
+--     devoured bool default false, 
+-- 	PRIMARY KEY (id)
+-- );
 
-CREATE TABLE pets
-(
-	id int NOT NULL AUTO_INCREMENT,
-	animal_breed varchar(255) NOT NULL,
-	animal_name varchar(255) NOT NULL,
-	price int NOT NULL,
-	buyer_id int NOT NULL,
-	PRIMARY KEY (id),
-	FOREIGN KEY (buyer_id) REFERENCES buyers(id)
-);
+-- - NSERT INTO burgers (burger_name, devoured)
+-- VALUES ("Cheese Burger", FALSE),
+-- ("Hamburger", FALSE),
+-- ("Pizza Burger", FALSE);
+
+
+select * from burgers

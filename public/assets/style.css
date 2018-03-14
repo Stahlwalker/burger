@@ -15,11 +15,12 @@ img {
 }
 
 h1 {
-	font-size: 40px;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 h1, h2 {
@@ -44,7 +45,7 @@ button {
 #add>textarea {
 	width: 60%;
 	height: 100%;
-	color: #e64f18;
+	color: #df72f5;
 	padding: 19px;
 }
 
@@ -57,7 +58,7 @@ button {
 .well {
 	float: left;
 	width: 75%;
-	color: #e64f18;
+	color: #416fec;
 }
 
 .devoured {

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/assets/style.css" type="text/css" />
+		<title>Eat Burgers App</title>
+		<!-- <script src="https://code.jquery.com/jquery.js"></script>  -->
+	</head>
+	<body>
+
+<div class ="container">
+
+    <img src="public/assets/images/burger1.png">
+    <h1>Nom Nom NOM!</h1>
+    
+    <div class="row">
+        <div class="col-sm-6">
+          <h2>Burgers you must eat!</h2>
+              <form id="update" action="/burgers/devour/{{this.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="devoured" value="true">
+                <button class="btn btn-info" type="submit">Devour it!</button>
+              </form>
+              <div class="well">
+              </div>
+        </div>
+    
+        <div class="col-sm-6">
+          <h2>Burgers Devoured!</h2>
+              <div class="well devoured">
+              </div>
+          </div>
+    
+    
+    </div>
+    
+    <h2>Submit a delicious burger</h2>
+      
+      <form id="add" action="/burgers/add" method="POST">
+        <textarea name="burger_name"></textarea>
+        <button class="btn btn-danger" type="submit">Submit</button>
+      </form>
+    
+    </div>
+
+    <!-- <script src="/assets/js/burgers.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<h1>Nom Nom NOM eat Burgers!</h1>
+
+<div class="row">
+    <div class="col-sm-6">
+      <h2>Burgers to Eat!</h2>
+      {{#each burgers}}
+        {{#unless this.devoured}}
+          <form id="update" action="/burgers/devour/{{this.id}}?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="true">
+            <button class="btn btn-danger" type="submit">Devour it!</button>
+          </form>
+          <div class="well">
+            {{this.id}}. {{this.burger_name}}
+          </div>
+        {{/unless}}
+      {{/each}}
+    </div>
+
+    <div class="col-sm-6">
+      <h2>Burgers Devoured!</h2>
+      {{#each burgers}}
+        {{#if this.devoured}}
+          <div class="well devoured">
+            {{this.id}}. {{this.burger_name}}
+          </div>
+        {{/if}}
+      {{/each}}
+      </div>
+
+
+</div>
+
+<h2>Enter a burger you want to eat then click "Submit"</h2>
+  
+  <form id="add" action="/burgers/add" method="POST">
+    <textarea name="burger_name"></textarea>
+    <button class="btn btn-warning" type="submit">Submit</button>
+  </form>
+
+</div>

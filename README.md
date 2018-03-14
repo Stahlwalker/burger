@@ -1,6 +1,6 @@
 # burger
 
-[Friend Finder App](https://ancient-dawn-38567.herokuapp.com/burgers/)
+[Eat Burger App](https://ancient-dawn-38567.herokuapp.com/burgers/)
 
 ## What the project does?
     * This project is a node express app using mysql as a database and handlebars to serve the html page

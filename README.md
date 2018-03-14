@@ -1,6 +1,6 @@
 # burger
 
-[Friend Finder App](https://mighty-scrubland-37997.herokuapp.com/)
+[Friend Finder App](https://ancient-dawn-38567.herokuapp.com/burgers/)
 
 ## What the project does?
     * This project is a node express app using mysql as a database and handlebars to serve the html page
@@ -8,7 +8,7 @@
 
 ## How users can get started with the project?
     * In the command line users can provide the following:
-    * 1. visit https://mighty-scrubland-37997.herokuapp.com/
+    * 1. visit https://ancient-dawn-38567.herokuapp.com/burgers/
     * 2. follow the app which lets the user input the name of the burger
     * 3. once burger name is submitted it will render on the left screen
     * 4. if user clicks the devoured button it will move to the right screen. 

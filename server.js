@@ -1,7 +1,7 @@
 
 var express = require("express");
 var bodyParser = require("body-parser");
-var methodOveride = require('method-override');
+var methodOverride = require('method-override');
 
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 8080;
@@ -23,7 +23,7 @@ app.set("view engine", "handlebars");
 // Import routes and give the server access to them.
 var routes = require("./controllers/burgers_controller.js");
 
-app.use(routes);
+app.use("/", routes);
 
 app.listen(PORT, function() {
     console.log("Listening on PORT " + PORT);

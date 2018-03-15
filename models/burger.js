@@ -23,7 +23,7 @@ var burger = {
   // create a delete function for deleting a burger already in the MySQL database
 //   delete: function (condition, cb) {
 //     orm.delete("burgers", condition, function (res) {
-//         qa(res);
+//         cb(res);
 //     });
 //    }
 // };

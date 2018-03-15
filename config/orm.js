@@ -75,10 +75,10 @@ var orm = {
     var queryString = "INSERT INTO " + table;
    
     queryString += " (";
-    queryString += col;
+    queryString += col.toString();
     queryString += ") ";
     queryString += "VALUES (";
-    queryString += printQuestionMarks(vals.length);
+    queryString += printQuestionMarks(val.length);
     queryString += ") ";
 
     console.log(queryString);

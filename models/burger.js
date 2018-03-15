@@ -9,16 +9,24 @@ var burger = {
   },
   // The variables cols and vals are arrays.
   create: function(col, val, cb) {
-    orm.create("burgers", columns, values, function(res) {
+    orm.create("burgers", col, val, function(res) {
       cb(res);
     });
   },
   update: function(objColVal, condition, cb) {
-    orm.update("burgers", objColVals, condition, function(res) {
+    orm.update("burgers", objColVal, condition, function(res) {
       cb(res);
     });
   },
 };
+
+  // create a delete function for deleting a burger already in the MySQL database
+//   delete: function (condition, cb) {
+//     orm.delete("burgers", condition, function (res) {
+//         qa(res);
+//     });
+//    }
+// };
 
 // Export the database functions for the controller (catsController.js).
 module.exports = burger;

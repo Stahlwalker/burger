@@ -18,7 +18,7 @@ function objToSql(ob) {
     if (Object.hasOwnProperty.call(ob, key)) {
       // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
      
-      return key + "=" + ob[ke];
+      return key + "=" + ob[key];
     }
   }
 

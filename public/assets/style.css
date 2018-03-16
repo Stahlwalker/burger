@@ -45,7 +45,7 @@ button {
 #add>textarea {
 	width: 60%;
 	height: 100%;
-	color: #df72f5;
+	color: black;
 	padding: 19px;
 }
 
@@ -55,9 +55,9 @@ button {
 	margin-bottom: 50px;
 }
 
-.well {
+.burgerName {
 	float: left;
-	width: 75%;
+	width: 100%;
 	color: #416fec;
 }
 

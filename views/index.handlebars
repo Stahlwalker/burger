@@ -12,7 +12,7 @@
             <input type="hidden" name="devoured" value="true">
             <button class="btn btn-info" id= "devour" type="submit">Devour it!</button>
           </form>
-          <div class="well">
+          <div class="burgerName">
             {{this.id}}. {{this.burger_name}}
           </div>
         {{/unless}}
@@ -23,7 +23,7 @@
       <h2>Burgers Devoured!</h2>
       {{#each burgers}}
         {{#if this.devoured}}
-          <div class="well devoured">
+          <div class="burgerName devoured">
             {{this.id}}. {{this.burger_name}}
           </div>
         {{/if}}

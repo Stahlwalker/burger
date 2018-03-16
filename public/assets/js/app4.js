@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     // ---------------------- UPDATE FUNCTION ----------------------------- //
 
-    $(document).on("click", "#devour", function (event) {
+    $("#devour").on("click", function (event) {
         event.preventDefault()
 
         var updateID = $(this).data('id');

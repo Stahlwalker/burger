@@ -33,7 +33,7 @@ button {
 }
 
 #update {
-	float: left;
+	text-align: center;
 }
 
 #add {
@@ -59,8 +59,10 @@ button {
 	float: left;
 	width: 100%;
 	color: #416fec;
+	text-align: center;
 }
 
 .devoured {
 	width: 100%;
+
 }

@@ -26,8 +26,6 @@ $(document).ready(function () {
     });
 
 
-    // ---------------------- UPDATE FUNCTION ----------------------------- //
-
     $("#devour").on("click", function (event) {
         event.preventDefault()
 

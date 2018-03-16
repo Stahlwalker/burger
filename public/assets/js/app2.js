@@ -19,6 +19,7 @@ $(document).ready(function () {
           console.log("added new burger");
           // Reload the page to get the updated list
           location.reload();
+        //   object.reload(forcedReload);
 
           var insert = "<div>" + data.burger_name + "</div>"
           $("#newBurger").append(insert)

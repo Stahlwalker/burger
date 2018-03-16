@@ -30,7 +30,7 @@ router.post("/api/burgers", function(req, res) {
     // Send back the ID of the new quote
     console.log(result);
     // return res.redirect("/");
-    return res.json({post: result});
+    // return res.json({post: result});
        return res.redirect("/");
     // res.json({ id: result.insertId });
   });

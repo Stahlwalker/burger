@@ -8,7 +8,7 @@
       <h2>Burgers you must EAT!</h2>
       {{#each burgers}}
         {{#unless this.devoured}}
-          <form id="update" action="/burgers/{{this.id}}?_method=PUT" method="POST">
+          <form id="update" action="/api/burgers/{{this.id}}?_method=PUT" method="POST">
             <input type="hidden" name="devoured" value="true">
             <button class="btn btn-info" id= "devour" type="submit">Devour it!</button>
           </form>
@@ -35,7 +35,7 @@
 
 <h2>Submit a delicious burger</h2>
   
-  <form id="add" action="/burgers/" method="POST">
+  <form id="add" action="/api/burgers/" method="POST">
     <textarea name="burger_name" id="addBurger"></textarea>
     <button class="btn btn-warning" id="submit1" type="submit">Submit</button>
   </form>

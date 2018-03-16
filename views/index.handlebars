@@ -10,7 +10,7 @@
         {{#unless this.devoured}}
           <form id="update" action="/burgers/devour/{{this.id}}?_method=PUT" method="POST">
             <input type="hidden" name="devoured" value="true">
-            <button class="btn btn-danger" type="submit">Devour it!</button>
+            <button class="btn btn-danger" id= "devour" type="submit">Devour it!</button>
           </form>
           <div class="well">
             {{this.id}}. {{this.burger_name}}
@@ -35,9 +35,9 @@
 
 <h2>Submit a delicious burger</h2>
   
-  <form id="add" action="/burgers/add" method="POST">
-    <textarea name="burger_name"></textarea>
-    <button class="btn btn-warning" type="submit">Submit</button>
+  <form id="add" action="/burgers/" method="POST">
+    <textarea name="burger_name" id="addBurger"></textarea>
+    <button class="btn btn-warning" id="submit1" type="submit">Submit</button>
   </form>
 
 </div>

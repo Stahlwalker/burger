@@ -2,7 +2,9 @@
 
 [Eat Burger App](https://ancient-dawn-38567.herokuapp.com/burgers/)
 
-![This is a screen shot of text file results](https://github.com/Stahlwalker/burger/blob/master/public/assets/images/AppImage.png)
+![This is a screen shot of my app](https://github.com/Stahlwalker/burger/blob/master/public/assets/images/AppImage.png)
+
+![This is a screen shot of mysql database](https://github.com/Stahlwalker/burger/blob/master/public/assets/images/AppImage.png)
 
 ## What the project does?
     * This project is a node express app using mysql as a database and handlebars to serve the html page

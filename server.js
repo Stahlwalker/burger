@@ -14,6 +14,7 @@ app.use(express.static(process.cwd() + '/public'));
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
+app.use(bodyParser.json());
 
 var exphbs = require("express-handlebars");
 
